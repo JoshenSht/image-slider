@@ -1,0 +1,330 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio website of Joshen Shrestha">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+    <title>Joshen Shrestha | Portfolio</title>
+</head>
+
+<body>
+
+    <!-- Header and Navigation -->
+    <header class="top">
+
+        <div class="logo">
+            <img src="images/logo.png" alt="Joshen Shrestha Logo" width="100">
+        </div>
+
+        <nav class="navigation">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="search">
+            <form>
+                <label for="search">Search:</label>
+                <input id="search" type="search" placeholder="Search...">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+
+    </header>
+
+    <main class="container">
+
+        <!-- About Section -->
+        <section id="about" class="about">
+
+            <div class="about-content">
+                <h1>About Me</h1>
+
+                <p>
+                    Hello, my name is Joshen Shrestha. I am a student in MIT college.
+                    I enjoy learning new technologies and developing my technical
+                    skills through academic and personal projects.
+                </p>
+            </div>
+
+            <div class="about-image">
+                <img src="images/joshen.jpg"
+                     alt="Joshen Shrestha profile picture"
+                     width="200">
+            </div>
+
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+
+            <h2>My Projects</h2>
+
+            <!-- Existing Project 1 -->
+            <div class="projects-grid">
+
+                <article class="project">
+                    <h3>E-Commerce Site</h3>
+
+                    <p>
+                        A web-based application designed to help users efficiently
+                        manage tasks and browse products through an intuitive interface.
+                    </p>
+                </article>
+
+            </div>
+
+            <!-- Existing Project 2 -->
+            <div class="projects-grid">
+
+                <article class="project">
+                    <h3>Personal Website</h3>
+
+                    <p>
+                        A personal website created using HTML and CSS. It is a simple
+                        website that showcases my skills, education level, and projects.
+                    </p>
+                </article>
+
+            </div>
+
+            <!-- NEW PROJECT: IMAGE SLIDER -->
+            <div class="projects-grid">
+
+                <article class="project slider-project">
+
+                    <h3>Responsive Image Slider</h3>
+
+                    <p class="slider-description">
+                        An interactive image slider developed using HTML, CSS,
+                        and vanilla JavaScript. It includes smooth horizontal
+                        animations, navigation arrows, clickable indicator dots,
+                        and infinite looping.
+                    </p>
+
+                    <div class="slider" aria-label="Project image slider">
+
+                        <!-- Image Viewport -->
+                        <div class="slider-viewport">
+
+                            <div class="slider-track">
+
+                                <div class="slide">
+                                    <img src="images/image1.jpg"
+                                         alt="Tree and nature landscape">
+                                </div>
+
+                                <div class="slide">
+                                    <img src="images/image2.jpg"
+                                         alt="Fish">
+                                </div>
+
+                                <div class="slide">
+                                    <img src="images/image3.jpg"
+                                         alt="Gallery image three">
+                                </div>
+
+                                <div class="slide">
+                                    <img src="images/image4.png"
+                                         alt="Gallery image four">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Previous Button -->
+                        <button class="slider-btn prev"
+                                type="button"
+                                aria-label="Previous image">
+                            &#10094;
+                        </button>
+
+                        <!-- Next Button -->
+                        <button class="slider-btn next"
+                                type="button"
+                                aria-label="Next image">
+                            &#10095;
+                        </button>
+
+                        <!-- Navigation Dots -->
+                        <div class="slider-dots"
+                             aria-label="Select an image">
+                        </div>
+
+                        <!-- Current Image Counter -->
+                        <p class="slide-counter" aria-live="polite">
+                            Image 1 of 4
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+
+            <h2>My Skills</h2>
+
+            <div class="skills-list">
+
+                <dl>
+                    <dt>Programming Languages</dt>
+                    <dd>Java, C, Python</dd>
+
+                    <dt>Tools</dt>
+                    <dd>Excel, VS Code, MS Word, Adobe Photoshop</dd>
+                </dl>
+
+            </div>
+
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education">
+
+            <h2>Education</h2>
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>S.N</th>
+                            <th>Level</th>
+                            <th>Institution Name</th>
+                            <th>GPA</th>
+                            <th>Grade</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>1</td>
+                            <td>10</td>
+                            <td>Mount Sinai English Boarding School</td>
+                            <td>3.4</td>
+                            <td>A</td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>+2</td>
+                            <td>DAV</td>
+                            <td>3.2</td>
+                            <td>B+</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+
+            <h2>Contact Me</h2>
+
+            <form>
+
+                <p>Send information below:</p>
+
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input id="name"
+                           name="name"
+                           type="text"
+                           placeholder="Enter your name"
+                           required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input id="email"
+                           name="email"
+                           type="email"
+                           placeholder="Enter your email"
+                           required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message"
+                              name="message"
+                              rows="4"
+                              placeholder="Enter your message"
+                              required></textarea>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit">Send</button>
+                </div>
+
+            </form>
+
+        </section>
+
+        <!-- Social Media Section -->
+        <section class="social">
+
+            <h2>Follow Me</h2>
+
+            <div class="social-links">
+
+                <a href="https://www.instagram.com/vibewjo.shen_/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    <img src="images/insta.png"
+                         alt="Instagram"
+                         width="50">
+                </a>
+
+                <a href="https://www.facebook.com/joshen.shrestha/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    <img src="images/facebook.png"
+                         alt="Facebook"
+                         width="50">
+                </a>
+
+                <a href="https://www.linkedin.com/in/joshen-shrestha-729479340/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    <img src="images/linkedin.png"
+                         alt="LinkedIn"
+                         width="50">
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Thank you for visiting my website.</p>
+    </footer>
+
+</body>
+
+</html>
